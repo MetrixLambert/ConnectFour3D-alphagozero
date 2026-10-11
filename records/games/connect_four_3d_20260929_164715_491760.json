@@ -1,0 +1,567 @@
+{
+  "format": "connect_four_3d_record",
+  "version": 1,
+  "game_started_at": "2026-09-29T16:47:15+08:00",
+  "saved_at": "2026-09-29T16:48:45+08:00",
+  "settings": {
+    "board_size": 5,
+    "connect_length": 4,
+    "human_player": -1,
+    "agent_player": 1,
+    "agent": "AlphaZeroAgent",
+    "checkpoint": "E:\\MyProjects\\ConnectFour3D-alphagozero\\saved_models\\deployment\\stage2_champion_iter_000260.pt",
+    "iteration": 260,
+    "simulations": 50,
+    "device": "cuda",
+    "action_mapping": "action = board_size * x + y",
+    "gravity": "lowest available z; z=0 is bottom"
+  },
+  "status": {
+    "result": "player_2_wins",
+    "terminated": true,
+    "winner": -1,
+    "current_player": -1,
+    "move_count": 30
+  },
+  "moves": [
+    {
+      "move": 1,
+      "player": 1,
+      "action": 12,
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:17+08:00"
+    },
+    {
+      "move": 2,
+      "player": -1,
+      "action": 8,
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:20+08:00"
+    },
+    {
+      "move": 3,
+      "player": 1,
+      "action": 13,
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:21+08:00"
+    },
+    {
+      "move": 4,
+      "player": -1,
+      "action": 11,
+      "position": {
+        "x": 2,
+        "y": 1,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:22+08:00"
+    },
+    {
+      "move": 5,
+      "player": 1,
+      "action": 6,
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:23+08:00"
+    },
+    {
+      "move": 6,
+      "player": -1,
+      "action": 18,
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:23+08:00"
+    },
+    {
+      "move": 7,
+      "player": 1,
+      "action": 7,
+      "position": {
+        "x": 1,
+        "y": 2,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:25+08:00"
+    },
+    {
+      "move": 8,
+      "player": -1,
+      "action": 17,
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:26+08:00"
+    },
+    {
+      "move": 9,
+      "player": 1,
+      "action": 19,
+      "position": {
+        "x": 3,
+        "y": 4,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:28+08:00"
+    },
+    {
+      "move": 10,
+      "player": -1,
+      "action": 1,
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:28+08:00"
+    },
+    {
+      "move": 11,
+      "player": 1,
+      "action": 5,
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:30+08:00"
+    },
+    {
+      "move": 12,
+      "player": -1,
+      "action": 16,
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:32+08:00"
+    },
+    {
+      "move": 13,
+      "player": 1,
+      "action": 15,
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:47:34+08:00"
+    },
+    {
+      "move": 14,
+      "player": -1,
+      "action": 12,
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 1
+      },
+      "played_at": "2026-09-29T16:47:44+08:00"
+    },
+    {
+      "move": 15,
+      "player": 1,
+      "action": 13,
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 1
+      },
+      "played_at": "2026-09-29T16:47:46+08:00"
+    },
+    {
+      "move": 16,
+      "player": -1,
+      "action": 8,
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 1
+      },
+      "played_at": "2026-09-29T16:47:53+08:00"
+    },
+    {
+      "move": 17,
+      "player": 1,
+      "action": 13,
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 2
+      },
+      "played_at": "2026-09-29T16:47:56+08:00"
+    },
+    {
+      "move": 18,
+      "player": -1,
+      "action": 13,
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 3
+      },
+      "played_at": "2026-09-29T16:47:59+08:00"
+    },
+    {
+      "move": 19,
+      "player": 1,
+      "action": 13,
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 4
+      },
+      "played_at": "2026-09-29T16:48:01+08:00"
+    },
+    {
+      "move": 20,
+      "player": -1,
+      "action": 8,
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 2
+      },
+      "played_at": "2026-09-29T16:48:10+08:00"
+    },
+    {
+      "move": 21,
+      "player": 1,
+      "action": 8,
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 3
+      },
+      "played_at": "2026-09-29T16:48:12+08:00"
+    },
+    {
+      "move": 22,
+      "player": -1,
+      "action": 16,
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 1
+      },
+      "played_at": "2026-09-29T16:48:23+08:00"
+    },
+    {
+      "move": 23,
+      "player": 1,
+      "action": 10,
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:48:25+08:00"
+    },
+    {
+      "move": 24,
+      "player": -1,
+      "action": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:48:26+08:00"
+    },
+    {
+      "move": 25,
+      "player": 1,
+      "action": 5,
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 1
+      },
+      "played_at": "2026-09-29T16:48:28+08:00"
+    },
+    {
+      "move": 26,
+      "player": -1,
+      "action": 20,
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 0
+      },
+      "played_at": "2026-09-29T16:48:31+08:00"
+    },
+    {
+      "move": 27,
+      "player": 1,
+      "action": 5,
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 2
+      },
+      "played_at": "2026-09-29T16:48:32+08:00"
+    },
+    {
+      "move": 28,
+      "player": -1,
+      "action": 5,
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 3
+      },
+      "played_at": "2026-09-29T16:48:33+08:00"
+    },
+    {
+      "move": 29,
+      "player": 1,
+      "action": 5,
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 4
+      },
+      "played_at": "2026-09-29T16:48:35+08:00"
+    },
+    {
+      "move": 30,
+      "player": -1,
+      "action": 20,
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 1
+      },
+      "played_at": "2026-09-29T16:48:44+08:00"
+    }
+  ],
+  "final_board_xyz": [
+    [
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "winning_positions": [
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      1,
+      3,
+      1
+    ]
+  ]
+}

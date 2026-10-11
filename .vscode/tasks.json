@@ -1,0 +1,268 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Train from configs/train.json",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Evaluate from configs/eval.json",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_evaluation.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Train stage2 from configs/train_stage2.json",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Launch ConnectFour3D UI",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "${workspaceFolder}/run_ui.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": false
+            }
+        },
+        {
+            "label": "Train stage2 sim100 branch from iteration 230",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_sim100_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Train stage2 sim200 branch from iteration 340",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_sim200_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Fine-tune stage2 sim200 from iteration 480",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_sim200_lr1e4_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Train stage2 sim200 temperature 0.8 from iteration 510",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_sim200_temp08_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Fine-tune temp0.8 from iteration 590 with LR 1e-4",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_sim200_temp08_lr1e4_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Train ply-stratified stage2 from iteration 620",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_sim200_ply_stratified_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Train dynamic-simulation stage2 from iteration 620",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_dynamic_sim_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Train recent-75 stage2 from iteration 620",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage2_recent75_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        },
+        {
+            "label": "Train stage3 depth-8 from iteration 620",
+            "type": "process",
+            "command": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "args": [
+                "-u",
+                "${workspaceFolder}/run_stage3_depth8_training.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            }
+        }
+    ]
+}

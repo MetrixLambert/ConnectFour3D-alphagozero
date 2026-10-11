@@ -1,0 +1,96 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Train: Continue stage1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "python": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "args": [
+                "--iterations", "10",
+                "--games-per-iteration", "10",
+                "--simulations", "50",
+                "--training-steps", "50",
+                "--batch-size", "64",
+                "--buffer-size", "20000",
+                "--channels", "32",
+                "--residual-blocks", "2",
+                "--learning-rate", "0.001",
+                "--symmetry-augmentation",
+                "--seed", "2",
+                "--device", "cuda",
+                "--checkpoint", "saved_models/stage1.pt",
+                "--snapshot-interval", "10",
+                "--snapshot-dir", "saved_models/checkpoints",
+                "--log-interval", "1",
+                "--resume"
+            ]
+        },
+        {
+            "name": "Train: Short smoke test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "python": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "args": [
+                "--iterations", "2",
+                "--games-per-iteration", "2",
+                "--simulations", "5",
+                "--training-steps", "5",
+                "--batch-size", "16",
+                "--channels", "8",
+                "--residual-blocks", "1",
+                "--device", "cuda",
+                "--checkpoint", "saved_models/cursor_smoke.pt",
+                "--log-interval", "1"
+            ]
+        },
+        {
+            "name": "Evaluate: stage1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/eval.py",
+            "python": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "args": [
+                "saved_models/stage1.pt",
+                "--games", "20",
+                "--simulations", "50",
+                "--alpha-beta-depth", "2",
+                "--device", "cuda",
+                "--seed", "200"
+            ]
+        },
+        {
+            "name": "Test: pytest",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "python": "C:\\Users\\Administrator\\.conda\\envs\\pyRL\\python.exe",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-q"
+            ]
+        }
+    ]
+}

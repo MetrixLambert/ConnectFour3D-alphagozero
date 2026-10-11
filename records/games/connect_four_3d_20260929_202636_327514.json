@@ -1,0 +1,336 @@
+{
+  "format": "connect_four_3d_record",
+  "version": 1,
+  "game_started_at": "2026-09-29T20:26:36+08:00",
+  "saved_at": "2026-09-29T20:27:00+08:00",
+  "settings": {
+    "board_size": 5,
+    "connect_length": 4,
+    "human_player": 1,
+    "agent_player": -1,
+    "agent": "AlphaZeroAgent",
+    "checkpoint": "E:\\MyProjects\\ConnectFour3D-alphagozero\\saved_models\\deployment\\stage2_sim100_champion_iter_000340.pt",
+    "iteration": 340,
+    "simulations": 400,
+    "device": "cuda",
+    "action_mapping": "action = board_size * x + y",
+    "gravity": "lowest available z; z=0 is bottom"
+  },
+  "status": {
+    "result": "player_1_wins",
+    "terminated": true,
+    "winner": 1,
+    "current_player": 1,
+    "move_count": 9
+  },
+  "moves": [
+    {
+      "move": 1,
+      "player": 1,
+      "action": 12,
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:37+08:00"
+    },
+    {
+      "move": 2,
+      "player": -1,
+      "action": 12,
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 1
+      },
+      "played_at": "2026-09-29T20:26:38+08:00"
+    },
+    {
+      "move": 3,
+      "player": 1,
+      "action": 8,
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:40+08:00"
+    },
+    {
+      "move": 4,
+      "player": -1,
+      "action": 16,
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:41+08:00"
+    },
+    {
+      "move": 5,
+      "player": 1,
+      "action": 18,
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:42+08:00"
+    },
+    {
+      "move": 6,
+      "player": -1,
+      "action": 13,
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:43+08:00"
+    },
+    {
+      "move": 7,
+      "player": 1,
+      "action": 6,
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:44+08:00"
+    },
+    {
+      "move": 8,
+      "player": -1,
+      "action": 21,
+      "position": {
+        "x": 4,
+        "y": 1,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:50+08:00"
+    },
+    {
+      "move": 9,
+      "player": 1,
+      "action": 24,
+      "position": {
+        "x": 4,
+        "y": 4,
+        "z": 0
+      },
+      "played_at": "2026-09-29T20:26:51+08:00"
+    }
+  ],
+  "final_board_xyz": [
+    [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "winning_positions": [
+    [
+      4,
+      4,
+      0
+    ],
+    [
+      3,
+      3,
+      0
+    ],
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ]
+}

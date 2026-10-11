@@ -1,0 +1,22 @@
+{
+    "iterations": 100,
+    "games_per_iteration": 10,
+    "simulations": 100,
+    "training_steps": 50,
+    "batch_size": 64,
+    "buffer_size": 50000,
+    "resize_buffer_on_resume": true,
+    "channels": 32,
+    "residual_blocks": 4,
+    "value_head_channels": 8,
+    "value_hidden_size": 128,
+    "learning_rate": 0.0003,
+    "symmetry_augmentation": true,
+    "seed": 3,
+    "device": "cuda",
+    "checkpoint": "saved_models/stage2_sim100_from230.pt",
+    "snapshot_interval": 10,
+    "snapshot_dir": "saved_models/checkpoints",
+    "log_interval": 1,
+    "resume": true
+}

@@ -1,0 +1,15 @@
+{
+    "checkpoints": [
+        "saved_models/checkpoints/stage3_depth8_from620_iter_000130.pt"
+    ],
+    "opponent_checkpoint": "saved_models/checkpoints/stage3_depth8_from620_iter_000130.pt",
+    "opponents": [
+        "checkpoint"
+    ],
+    "arena_opening_moves": 2,
+    "games": 100,
+    "simulations": 200,
+    "alpha_beta_depth": 3,
+    "device": "cuda",
+    "seed": 200
+}
