@@ -1,0 +1,14 @@
+# Training checkpoints are large binary artifacts. Keep only the current
+# resumable state and the two UI deployment models selected for this repo.
+saved_models/**
+!saved_models/stage3_depth8_from620.pt
+!saved_models/deployment/
+saved_models/deployment/**
+!saved_models/deployment/stage3_depth8_champion_iter_000100.pt
+!saved_models/deployment/stage3_depth8_champion_iter_000130.pt
+
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+

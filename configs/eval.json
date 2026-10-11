@@ -1,8 +1,8 @@
 {
     "checkpoints": [
-        "saved_models/checkpoints/stage3_depth8_from620_iter_000130.pt"
+        "saved_models/deployment/stage3_depth8_champion_iter_000100.pt"
     ],
-    "opponent_checkpoint": "saved_models/checkpoints/stage3_depth8_from620_iter_000130.pt",
+    "opponent_checkpoint": "saved_models/deployment/stage3_depth8_champion_iter_000130.pt",
     "opponents": [
         "checkpoint"
     ],
